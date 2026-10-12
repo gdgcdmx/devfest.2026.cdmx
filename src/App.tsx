@@ -1,9 +1,6 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { Tracks } from './components/Tracks';
-import { VenueSection } from './components/VenueSection';
-import { RegistrationSection } from './components/RegistrationSection';
 import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {

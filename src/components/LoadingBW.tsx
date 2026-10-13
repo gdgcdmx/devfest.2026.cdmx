@@ -57,11 +57,11 @@ export const LoadingBW: React.FC = () => {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
           </span>
           <span className="uppercase tracking-wider font-semibold text-zinc-200">
-            {isResetting ? 'REINICIANDO...' : progress === 70 ? 'LÍMITE ALCANZADO (70%)' : 'CARGANDO SISTEMA'}
+            {isResetting ? 'REINICIANDO...' : progress === 70 ? '' : 'CARGANDO SISTEMA'}
           </span>
         </div>
         <span className="text-white font-bold tracking-widest text-sm bg-zinc-900 border border-zinc-700 px-2 py-0.5 rounded">
-          {progress}% / 70%
+          {progress}% / 100%
         </span>
       </div>
 
@@ -76,15 +76,6 @@ export const LoadingBW: React.FC = () => {
           <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_6px,rgba(0,0,0,0.15)_6px,rgba(0,0,0,0.15)_12px)] opacity-50"></div>
         </div>
 
-        {/* 70% Threshold Marker */}
-        <div
-          className="absolute top-0 bottom-0 w-0.5 bg-zinc-500 z-10"
-          style={{ left: '70%' }}
-          title="Límite 70%"
-        >
-          <div className="absolute -top-1 -left-1 w-2 h-1 bg-zinc-400 rounded-xs"></div>
-          <div className="absolute -bottom-1 -left-1 w-2 h-1 bg-zinc-400 rounded-xs"></div>
-        </div>
       </div>
 
       {/* Segmented Monochrome Step Blocks */}

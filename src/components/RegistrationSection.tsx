@@ -105,7 +105,8 @@ export const RegistrationSection: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full mt-4 py-3.5 px-6 rounded-xl font-bold text-white bg-gradient-to-r from-[#4285F4] via-[#EA4335] via-[#FBBC05] to-[#34A853] hover:opacity-95 shadow-lg shadow-[#4285F4]/20 transition-all flex items-center justify-center gap-2 group cursor-pointer"
+                style={{ background: 'linear-gradient(to right, #4285F4 0%, #EA4335 33%, #FBBC05 66%, #34A853 100%)' }}
+                className="w-full mt-4 py-3.5 px-6 rounded-xl font-bold text-white hover:opacity-95 shadow-lg shadow-[#4285F4]/20 transition-all flex items-center justify-center gap-2 group cursor-pointer"
               >
                 <span>Confirmar Mi Asistencia</span>
                 <Send className="w-4 h-4 transition-transform group-hover:translate-x-1" />
